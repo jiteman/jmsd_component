@@ -12,7 +12,7 @@ set( JMSD_COMPONENT_CMAKE_SETTINGS_PATH ${PROJECT_SOURCE_DIR}/_cmake_settings )
 
 add_subdirectory( jmsd_c_base_lib )
 add_subdirectory( jmsd_c_derived_lib )
-#add_subdirectory( jmsd_c_executabe )
+add_subdirectory( jmsd_c_executabe )
 
 
 JMSD_SHOW_PROJECT_GROUP_FOOTER()
