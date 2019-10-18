@@ -5,7 +5,7 @@
 
 
 namespace jmsd {
-namespace tpc_base {
+namespace c_base {
 
 
 class JMSD_C_BASE_LIBRARY_TEMPLATE_SHARED_INTERFACE C_base_class {
@@ -47,5 +47,5 @@ private:
 
 
 
-} // namespace blt
+} // namespace c_base
 } // namespace jmsd

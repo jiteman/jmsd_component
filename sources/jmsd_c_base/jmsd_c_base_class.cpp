@@ -2,7 +2,7 @@
 
 
 namespace jmsd {
-namespace tpc_base {
+namespace c_base {
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -47,5 +47,5 @@ C_base_class &C_base_class::operator =( C_base_class &&another ) noexcept {
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
-} // namespace blt
+} // namespace c_base
 } // namespace jmsd
