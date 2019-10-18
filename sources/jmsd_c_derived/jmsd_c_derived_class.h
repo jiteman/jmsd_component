@@ -8,10 +8,10 @@
 
 
 namespace jmsd {
-namespace tpc_derived {
+namespace c_derived {
 
 
-class JMSD_C_DERIVED_LIBRARY_TEMPLATE_SHARED_INTERFACE Tpc_derived_class :
+class JMSD_C_DERIVED_LIBRARY_TEMPLATE_SHARED_INTERFACE C_derived_class :
 	public c_base::C_base_class
 {
 
@@ -26,21 +26,21 @@ public:
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 public:
 	// virtual Tpc_base_class
-	~Tpc_derived_class() noexcept override = default;
+	~C_derived_class() noexcept override = default;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 public:
-	Tpc_derived_class() noexcept = default;
+	C_derived_class() noexcept = default;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 private:
-	Tpc_derived_class( const Tpc_derived_class &another ) noexcept = delete;
-	Tpc_derived_class &operator =( const Tpc_derived_class &another ) noexcept = delete;
+	C_derived_class( const C_derived_class &another ) noexcept = delete;
+	C_derived_class &operator =( const C_derived_class &another ) noexcept = delete;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 private:
-	Tpc_derived_class( Tpc_derived_class &&another ) noexcept = delete;
-	Tpc_derived_class &operator =( Tpc_derived_class &&another ) noexcept = delete;
+	C_derived_class( C_derived_class &&another ) noexcept = delete;
+	C_derived_class &operator =( C_derived_class &&another ) noexcept = delete;
 
 // # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 private:
@@ -54,5 +54,5 @@ private:
 };
 
 
-} // namespace dlt
+} // namespace c_derived
 } // namespace jmsd

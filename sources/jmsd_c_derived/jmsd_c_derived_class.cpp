@@ -2,12 +2,12 @@
 
 
 namespace jmsd {
-namespace tpc_derived {
+namespace c_derived {
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-char const *Tpc_derived_class::say_derived_hello() const noexcept {
-	return "Tpc_derived_class::say_derived_hello";
+char const *C_derived_class::say_derived_hello() const noexcept {
+	return "C_derived_class::say_derived_hello";
 }
 
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -25,5 +25,5 @@ char const *Tpc_derived_class::say_derived_hello() const noexcept {
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
-} // namespace dlt
+} // namespace c_derived
 } // namespace jmsd
