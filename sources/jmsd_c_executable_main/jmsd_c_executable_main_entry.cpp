@@ -1,4 +1,4 @@
-#include "jmsd_c_executable/jmsd_c_executable_class.h"
+#include "jmsd_c_executable_class.h"
 
 
 #include <iostream>

@@ -1,7 +1,7 @@
 #pragma once
 
 
-#include "jmsd_c_derived/jmsd_c_derived_class.h"
+#include "jmsd_c_derived_class.h"
 
 
 namespace jmsd {
