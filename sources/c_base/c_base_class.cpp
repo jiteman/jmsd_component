@@ -1,58 +1,51 @@
-#pragma once
-
-
-#include "jmsd_c_base_class.h"
-
-
-#include "jmsd_c_derived.h"
+#include "c_base_class.h"
 
 
 namespace jmsd {
-namespace c_derived {
+namespace c_base {
 
-
-class JMSD_C_DERIVED_LIBRARY_TEMPLATE_SHARED_INTERFACE C_derived_class :
-	public c_base::C_base_class
-{
-
-public:
-	// virtuals Tpc_base_class
-	//~virtuals Tpc_base_class
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-public:
-	char const *say_derived_hello() const noexcept;
+char const *C_base_class::say_base_hello() const noexcept {
+	return "C_base_class::say_base_hello";
+}
 
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-public:
-	// virtual Tpc_base_class
-	~C_derived_class() noexcept override = default;
+C_base_class::~C_base_class() noexcept
+{}
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-public:
-	C_derived_class() noexcept = default;
+C_base_class::C_base_class() noexcept
+{}
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-private:
-	C_derived_class( const C_derived_class &another ) noexcept = delete;
-	C_derived_class &operator =( const C_derived_class &another ) noexcept = delete;
+C_base_class::C_base_class( const C_base_class &/*another*/ ) noexcept {
+}
+
+const C_base_class &C_base_class::operator =( const C_base_class &another ) noexcept {
+	if ( &another == this ) return *this;
+
+	// copy
+	return *this;
+}
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-private:
-	C_derived_class( C_derived_class &&another ) noexcept = delete;
-	C_derived_class &operator =( C_derived_class &&another ) noexcept = delete;
+C_base_class::C_base_class( C_base_class &&/*another*/ ) noexcept {
+}
+
+C_base_class &C_base_class::operator =( C_base_class &&another ) noexcept {
+	if ( &another == this ) return *this;
+
+	// move
+	return *this;
+}
 
 // # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-private:
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-private:
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-private:
-
-};
 
 
-} // namespace c_derived
+} // namespace c_base
 } // namespace jmsd

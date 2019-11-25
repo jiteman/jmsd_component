@@ -1,13 +1,13 @@
-#include "jmsd_c_derived_class.h"
+#include "c_executable_class.h"
 
 
 namespace jmsd {
-namespace c_derived {
+namespace c_executable {
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-char const *C_derived_class::say_derived_hello() const noexcept {
-	return "C_derived_class::say_derived_hello";
+char const *C_executable_class::say_executable_hello() const noexcept {
+	return "C_executable_class::say_executable_hello";
 }
 
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -25,5 +25,5 @@ char const *C_derived_class::say_derived_hello() const noexcept {
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
-} // namespace c_derived
+} // namespace c_executable
 } // namespace jmsd

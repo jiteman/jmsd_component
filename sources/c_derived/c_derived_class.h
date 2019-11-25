@@ -1,43 +1,46 @@
 #pragma once
 
 
-#include "jmsd_c_derived_class.h"
+#include "c_base_class.h"
+
+
+#include "c_derived.h"
 
 
 namespace jmsd {
-namespace c_executable {
+namespace c_derived {
 
 
-class C_executable_class :
-	public c_derived::C_derived_class
+class JMSD_C_DERIVED_LIBRARY_TEMPLATE_SHARED_INTERFACE C_derived_class :
+	public c_base::C_base_class
 {
 
 public:
-	// virtuals Tpc_derived_class
-	//~virtuals Tpc_derived_class
+	// virtuals C_base_class
+	//~virtuals C_base_class
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 public:
-	char const *say_executable_hello() const noexcept;
+	char const *say_derived_hello() const noexcept;
 
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 public:
-	// virtual Tpc_derived_class
-	~C_executable_class() noexcept override = default;
+	// virtual Tpc_base_class
+	~C_derived_class() noexcept override = default;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 public:
-	C_executable_class() noexcept = default;
+	C_derived_class() noexcept = default;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 private:
-	C_executable_class( const C_executable_class &another ) noexcept = delete;
-	C_executable_class &operator =( const C_executable_class &another ) noexcept = delete;
+	C_derived_class( const C_derived_class &another ) noexcept = delete;
+	C_derived_class &operator =( const C_derived_class &another ) noexcept = delete;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 private:
-	C_executable_class( C_executable_class &&another ) noexcept = delete;
-	C_executable_class &operator =( C_executable_class &&another ) noexcept = delete;
+	C_derived_class( C_derived_class &&another ) noexcept = delete;
+	C_derived_class &operator =( C_derived_class &&another ) noexcept = delete;
 
 // # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 private:
@@ -51,5 +54,5 @@ private:
 };
 
 
-} // namespace c_executable
+} // namespace c_derived
 } // namespace jmsd
