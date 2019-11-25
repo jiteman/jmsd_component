@@ -1,13 +1,13 @@
 cmake_minimum_required( VERSION 3.7.1 )
 
-project( jmsd_c_base_lib C CXX )
+project( c_base_lib C CXX )
 
 
 JMSD_SHOW_PROJECT_HEADER()
 
 
-include( ${JMSD_COMPONENT_CMAKE_SETTINGS_PATH}/jmsd-c-base-set-compiler-settings.cmake )
-set( JMSD_THIS_PROJECT_SOURCE_ROOT ${JMSD_COMPONENT_SOURCE_ROOT_PATH}/jmsd_c_base )
+include( ${JMSD_COMPONENT_CMAKE_SETTINGS_PATH}/c-base-set-compiler-settings.cmake )
+set( JMSD_THIS_PROJECT_SOURCE_ROOT ${JMSD_COMPONENT_SOURCE_ROOT_PATH}/c_base )
 
 ## include dependencies
 set( ${PROJECT_NAME}_DEPENDENCY_DIRS_VAR
