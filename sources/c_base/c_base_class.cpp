@@ -11,34 +11,12 @@ char const *C_base_class::say_base_hello() const noexcept {
 }
 
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-C_base_class::~C_base_class() noexcept
-{}
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-C_base_class::C_base_class() noexcept
-{}
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-C_base_class::C_base_class( const C_base_class &/*another*/ ) noexcept {
-}
-
-const C_base_class &C_base_class::operator =( const C_base_class &another ) noexcept {
-	if ( &another == this ) return *this;
-
-	// copy
-	return *this;
-}
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-C_base_class::C_base_class( C_base_class &&/*another*/ ) noexcept {
-}
-
-C_base_class &C_base_class::operator =( C_base_class &&another ) noexcept {
-	if ( &another == this ) return *this;
-
-	// move
-	return *this;
-}
 
 // # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 

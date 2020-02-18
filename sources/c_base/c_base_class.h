@@ -17,22 +17,22 @@ public:
 	char const *say_base_hello() const noexcept;
 
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-public:
-	virtual ~C_base_class() noexcept;
+protected:
+	virtual ~C_base_class() noexcept = default;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-public:
-	C_base_class() noexcept;
+protected:
+	C_base_class() noexcept = default;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-public:
-	C_base_class( const C_base_class &another ) noexcept;
-	const C_base_class &operator =( const C_base_class &another ) noexcept;
+private:
+	C_base_class( const C_base_class &another ) noexcept = delete;
+	const C_base_class &operator =( const C_base_class &another ) noexcept = delete;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-public:
-	C_base_class( C_base_class &&another ) noexcept;
-	C_base_class &operator =( C_base_class &&another ) noexcept;
+private:
+	C_base_class( C_base_class &&another ) noexcept = delete;
+	C_base_class &operator =( C_base_class &&another ) noexcept = delete;
 
 // # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 private:
